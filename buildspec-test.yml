@@ -1,4 +1,4 @@
-version 0.1
+version: 0.1
 
 ## Use newman to run a postman collection.
 ## The env.json file is created by the pipeline with BASE_URL defined
