@@ -1,7 +1,6 @@
 version: 0.1
 
-## Use newman to run a postman collection.
-## The env.json file is created by the pipeline with BASE_URL defined
+## Use newman to run a postman collection.  The env.json file is created by the pipeline with BASE_URL defined
 
 phases:
   install:
@@ -10,6 +9,7 @@ phases:
   build:
     commands:
       - newman run -e env.json -r html,json,junit,cli src/test/postman/collection.json
+
 artifacts:
   files:
     - newman/*
